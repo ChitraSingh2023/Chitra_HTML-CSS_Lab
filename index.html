@@ -1,0 +1,95 @@
+<DOCTYPE html>
+    <html>
+    <title>Login page</title>
+    <meta name="description" content="This is a description of my web page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <style>
+        body {
+            background-image: url("images/body_background.jpg");
+            background-repeat: no-repeat;
+        }
+
+        td {
+            padding: 0px;
+            width: 400px;
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            margin-top: 5px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            margin-left: 20px;
+            border: none;
+            border-color: transparent;
+        }
+
+        button {
+            width: 150px;
+            height: 35px;
+            margin-top: 5px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            align-items: center;
+            margin-left: 20px;
+            background-color: rgb(83, 14, 148);
+            margin-left: 10px;
+            border: 5px thin white;
+            border-radius: 4px;
+
+
+        }
+
+        .loginform {
+            width: 350px;
+            height: 270px;
+            position: absolute;
+            left: 40%;
+            top: 25%;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+    </style>
+
+    <body>
+        <div>
+            <form id="form1" method="get" class="loginform">
+                <table>
+                    <thead>
+                        <caption>
+                            <h1>Create Gmail Account</h1>
+                        </caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="name" placeholder="FullName" required /> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="tel" id="mobile" placeholder="ContactNumber" pattern="[0-9]{10}"
+                                    required /> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="email" placeholder="Email" required /> </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><button type="Submit">Submit</button><button type="reset">Reset</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+
+            </form>
+        </div>
+    </body>
+
+    </html>
